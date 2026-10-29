@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <!-- Green (top) -->
+  <rect width="1200" height="267" fill="#0A7B36"/>
+  <!-- White (middle) -->
+  <rect y="267" width="1200" height="267" fill="#FFFFFF"/>
+  <!-- Black (bottom) -->
+  <rect y="534" width="1200" height="266" fill="#000000"/>
+  <!-- Three red stars in middle (Syrian Revolution flag) -->
+  <g fill="#CE1126">
+    <!-- Star 1 -->
+    <path d="M400 400 l12 36 38 1-31 22 12 37-31-23-31 23 12-37-31-22 38-1z"/>
+    <!-- Star 2 -->
+    <path d="M600 400 l12 36 38 1-31 22 12 37-31-23-31 23 12-37-31-22 38-1z"/>
+    <!-- Star 3 -->
+    <path d="M800 400 l12 36 38 1-31 22 12 37-31-23-31 23 12-37-31-22 38-1z"/>
+  </g>
+</svg>

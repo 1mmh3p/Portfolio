@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ===== SEO CORE ===== -->
-  <title>Mustafa El Huseyyen — Software Programmer & Web Developer | MuMaCodes</title>
-  <meta name="description" content="Mustafa El Huseyyen (مصطفى الحسيان) — Software Programmer & Web Developer. Building web apps, AI solutions and computer vision projects. Python, Flask, PyTorch, PHP, JavaScript." />
-  <meta name="keywords" content="Mustafa El Huseyyen, مصطفى الحسيان, MuMaCodes, Software Programmer, Web Developer, Python Developer, Flask, PyTorch, Computer Vision, Portfolio Türkiye" />
+  <title>Mustafa El Huseyyen — Computer Programmer | MuMaCodes Founder</title>
+  <meta name="description" content="Mustafa El Huseyyen (مصطفى الحسيان) — Computer Programmer from Syria, based in Türkiye. Founder of MuMaCodes. Web development, AI, computer vision, and software solutions." />
+  <meta name="keywords" content="Mustafa El Huseyyen, مصطفى الحسيان, MuMaCodes, Computer Programming, Software Developer, Syrian developer, Web Developer, Python, Flask, AI, Computer Vision, Portfolio, موماكودس" />
   <meta name="author" content="Mustafa El Huseyyen" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <link rel="canonical" href="https://mustafaelhuseyyen.netlify.app" />
+  <link rel="canonical" href="https://1mmh3p.github.io/Portfolio/" />
 
-  <!-- ===== OPEN GRAPH (فيسبوك/واتساب) ===== -->
+  <!-- ===== OPEN GRAPH ===== -->
   <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Mustafa El Huseyyen — Software Programmer & Web Developer" />
-  <meta property="og:description" content="Portfolio of Mustafa El Huseyyen: Web Development, AI, Computer Vision & MuMaCodes." />
-  <meta property="og:url" content="https://mustafaelhuseyyen.netlify.app" />
-  <meta property="og:image" content="https://mustafaelhuseyyen.netlify.appassets/og-image.png" />
+  <meta property="og:title" content="Mustafa El Huseyyen — Computer Programmer | MuMaCodes" />
+  <meta property="og:description" content="Portfolio of Mustafa El Huseyyen: Web Development, AI, Computer Vision. Founder of MuMaCodes community." />
+  <meta property="og:url" content="https://1mmh3p.github.io/Portfolio/" />
+  <meta property="og:image" content="https://1mmh3p.github.io/Portfolio/assets/og-image.png" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="ar_SY" />
 
-  <!-- ===== TWITTER CARD ===== -->
+  <!-- ===== TWITTER ===== -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mustafa El Huseyyen — Software Programmer" />
-  <meta name="twitter:description" content="Web Developer | AI & Computer Vision | MuMaCodes Founder" />
+  <meta name="twitter:title" content="Mustafa El Huseyyen — Computer Programmer" />
+  <meta name="twitter:description" content="Founder of MuMaCodes · Web · AI · Computer Vision" />
 
   <!-- ===== FAVICON ===== -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
@@ -33,21 +33,27 @@
   <!-- ===== FONTS ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
 
   <!-- ===== STYLES ===== -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- ===== JSON-LD SCHEMA (SEO GOLD) ===== -->
+  <!-- ===== JSON-LD PERSON ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Mustafa El Huseyyen",
-    "alternateName": "مصطفى محمد الحسيان",
-    "jobTitle": "Software Programmer & Web Developer",
-    "url": "https://mustafaelhuseyyen.netlify.app",
-    "image": "https://mustafaelhuseyyen.netlify.app/assets/og-image.png",
+    "alternateName": ["مصطفى محمد الحسيان", "Mustafa Huseyyen"],
+    "jobTitle": "Computer Programmer & Software Developer",
+    "url": "https://1mmh3p.github.io/Portfolio/",
+    "image": "https://1mmh3p.github.io/Portfolio/assets/og-image.png",
+    "nationality": "Syrian",
+    "founder": {
+      "@type": "Organization",
+      "name": "MuMaCodes",
+      "url": "https://mumacodes-group.netlify.app"
+    },
     "sameAs": [
       "https://github.com/1mmh3p",
       "https://www.linkedin.com/in/mustafa-el-huseyyen-8681922a2/",
@@ -65,25 +71,33 @@
 </head>
 <body>
 
+<div class="scroll-progress" id="scrollProgress"></div>
+
 <!-- ================= HEADER ================= -->
 <header class="site-header" id="header">
   <div class="container header-inner">
     <a href="#hero" class="logo" aria-label="Mustafa El Huseyyen home">
       <span class="logo-mark">MH</span>
-      <span class="logo-text" data-i18n="brand">MuMaCodes</span>
+      <span class="logo-text">Mustafa<span class="accent">.</span>H</span>
+      <img src="assets/flag-syria.svg" alt="Syria" class="flag-mini" />
     </a>
 
-    <nav class="nav" aria-label="Main navigation">
+    <nav class="nav" id="nav" aria-label="Main navigation">
       <ul class="nav-list">
-        <li><a href="#about"    data-i18n="nav_about">About</a></li>
-        <li><a href="#skills"   data-i18n="nav_skills">Skills</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
         <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
         <li><a href="#mumacodes" data-i18n="nav_brand">MuMaCodes</a></li>
-        <li><a href="#contact"  data-i18n="nav_contact">Contact</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
       </ul>
     </nav>
 
     <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Dark / Light">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
       <button class="lang-switch" id="langSwitch" aria-label="Switch language">
         <span id="langLabel">ع</span>
       </button>
@@ -97,34 +111,74 @@
 
 <!-- ================= HERO ================= -->
 <section class="hero" id="hero">
+  <div class="hero-glow"></div>
   <div class="container hero-inner">
-    <div class="hero-content">
-      <span class="badge" data-i18n="hero_badge">Available for opportunities</span>
-      <h1 class="hero-name">Mustafa El Huseyyen</h1>
-      <h2 class="hero-title" data-i18n="hero_title">Software Programmer · Web Developer</h2>
+    <div class="hero-content reveal">
+      <div class="hero-badges">
+        <span class="badge">
+          <span class="dot"></span>
+          <span data-i18n="hero_badge">Available for opportunities</span>
+        </span>
+        <span class="badge badge-flag">
+          <img src="assets/flag-syria.svg" alt="Syria flag" />
+          <span data-i18n="hero_syrian">Syrian Developer</span>
+        </span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="hero-greeting" data-i18n="hero_greeting">Hi, I'm</span>
+        Mustafa El Huseyyen
+      </h1>
+      <h2 class="hero-title">
+        <span class="accent" data-i18n="hero_title">Computer Programmer</span>
+        <span class="dot-sep">·</span>
+        <span data-i18n="hero_title2">Software Developer</span>
+      </h2>
       <p class="hero-desc" data-i18n="hero_desc">
-        I build practical web applications, AI solutions, and computer-vision projects.
-        Focused on clean code, clear interfaces, and real-world results.
+        Computer Programming graduate from Afyon Kocatepe University.
+        I build practical web applications, AI solutions, and computer-vision projects
+        with clean code and clear interfaces.
       </p>
 
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary" data-i18n="hero_cta1">Get in touch</a>
+        <a href="#contact" class="btn btn-primary">
+          <span data-i18n="hero_cta1">Get in touch</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
         <a href="#projects" class="btn btn-ghost" data-i18n="hero_cta2">View projects</a>
-        <a href="assets/resume.pdf" class="btn btn-outline" download data-i18n="hero_cta3">Download CV</a>
       </div>
 
       <div class="hero-social" aria-label="Social links">
-        <a href="https://github.com/1mmh3p" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
-        <a href="https://www.linkedin.com/in/mustafa-el-huseyyen-8681922a2/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-        <a href="https://www.instagram.com/1mmh3/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
-        <a href="https://wa.me/905394465124" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
-        <a href="mailto:mustafaelhuseyyen@gmail.com" aria-label="Email">@</a>
+        <a href="https://github.com/1mmh3p" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/mustafa-el-huseyyen-8681922a2/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.4H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/1mmh3/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="https://wa.me/905394465124" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.6c1.7.9 3.6 1.4 5.7 1.4 6.6 0 12-5.4 12-12S18.6 0 12 0zm0 22c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.5 16 2 14 2 12 2 6.5 6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z"/></svg>
+        </a>
+        <a href="mailto:mustafaelhuseyyen@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg>
+        </a>
       </div>
     </div>
 
-    <div class="hero-visual" aria-hidden="true">
-      <div class="monogram">MH</div>
-      <div class="glow"></div>
+    <div class="hero-visual reveal">
+      <div class="hero-card">
+        <div class="code-line"><span class="kw">const</span> <span class="var">dev</span> = {</div>
+        <div class="code-line indent"><span class="key">name</span>: <span class="str">"Mustafa"</span>,</div>
+        <div class="code-line indent"><span class="key">role</span>: <span class="str">"Computer Programmer"</span>,</div>
+        <div class="code-line indent"><span class="key">from</span>: <span class="str">"Syria"</span>,</div>
+        <div class="code-line indent"><span class="key">based</span>: <span class="str">"Türkiye"</span>,</div>
+        <div class="code-line indent"><span class="key">founder</span>: <span class="str">"MuMaCodes"</span>,</div>
+        <div class="code-line indent"><span class="key">stack</span>: [<span class="str">"Python"</span>, <span class="str">"JS"</span>, <span class="str">"PHP"</span>],</div>
+        <div class="code-line">};</div>
+        <div class="code-line"><span class="kw">export default</span> <span class="var">dev</span>;</div>
+      </div>
     </div>
   </div>
 </section>
@@ -132,72 +186,158 @@
 <!-- ================= ABOUT ================= -->
 <section class="section" id="about">
   <div class="container">
-    <h2 class="section-title" data-i18n="about_title">About Me</h2>
+    <div class="section-head reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title" data-i18n="about_title">About Me</h2>
+    </div>
     <div class="about-grid">
-      <div class="about-text">
+      <div class="about-text reveal">
         <p data-i18n="about_p1">
-          I am a software programming graduate interested in web development,
-          application development, artificial intelligence, and computer vision.
-          I build practical software solutions and work on projects involving
-          web technologies, machine learning, image processing, and database-driven applications.
+          I'm a <strong>Computer Programming</strong> graduate from Afyon Kocatepe University
+          (Bilgisayar Programcılığı), originally from <strong>Syria</strong> and based in Türkiye.
         </p>
         <p data-i18n="about_p2">
-          I focus on writing organized code, designing clear interfaces,
-          and delivering good user experience.
+          I build practical software solutions — web applications, AI-powered tools,
+          and computer-vision projects. I focus on clean code, clear interfaces,
+          and delivering great user experience.
+        </p>
+        <p data-i18n="about_p3">
+          Founder of <strong>MuMaCodes</strong> — a programming community supporting
+          learning, collaboration, and hands-on technical projects.
         </p>
       </div>
-      <div class="about-facts">
+      <div class="about-facts reveal">
         <div class="fact">
-          <span class="fact-label" data-i18n="fact_edu">Education</span>
-          <span class="fact-value">Afyon Kocatepe University</span>
-          <span class="fact-sub">Computer Programming</span>
+          <div class="fact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <span class="fact-label" data-i18n="fact_edu">Education</span>
+            <span class="fact-value">Afyon Kocatepe University</span>
+            <span class="fact-sub">Computer Programming</span>
+          </div>
         </div>
         <div class="fact">
-          <span class="fact-label" data-i18n="fact_loc">Location</span>
-          <span class="fact-value">Türkiye</span>
+          <div class="fact-icon">
+            <img src="assets/flag-syria.svg" alt="Syria" style="width:24px;height:16px;border-radius:3px" />
+          </div>
+          <div>
+            <span class="fact-label" data-i18n="fact_from">From</span>
+            <span class="fact-value">Syria</span>
+            <span class="fact-sub" data-i18n="fact_from_sub">Based in Türkiye</span>
+          </div>
         </div>
         <div class="fact">
-          <span class="fact-label" data-i18n="fact_focus">Focus</span>
-          <span class="fact-value">Web · AI · Computer Vision</span>
+          <div class="fact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div>
+            <span class="fact-label" data-i18n="fact_focus">Focus</span>
+            <span class="fact-value">Web · AI · Computer Vision</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= SKILLS ================= -->
-<section class="section section-alt" id="skills">
+<!-- ================= SERVICES ================= -->
+<section class="section section-alt" id="services">
   <div class="container">
-    <h2 class="section-title" data-i18n="skills_title">Technical Skills</h2>
-    <p class="section-sub" data-i18n="skills_sub">Technologies I work with</p>
+    <div class="section-head reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title" data-i18n="services_title">Services</h2>
+      <p class="section-sub" data-i18n="services_sub">What I can build for you</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 data-i18n="svc1_title">Web Development</h3>
+        <p data-i18n="svc1_desc">Modern, fast, and responsive websites — from landing pages to full web applications with clean, semantic code.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        </div>
+        <h3 data-i18n="svc2_title">E-Commerce</h3>
+        <p data-i18n="svc2_desc">Online stores with product management, cart, checkout flow, and admin dashboard — built with PHP & MySQL.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
+        </div>
+        <h3 data-i18n="svc3_title">AI & Computer Vision</h3>
+        <p data-i18n="svc3_desc">Image classification, object detection, and custom deep learning models using PyTorch, Keras, and OpenCV.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3 data-i18n="svc4_title">Custom Software</h3>
+        <p data-i18n="svc4_desc">Desktop tools, automation scripts, and Python applications tailored to your specific needs and workflow.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3 data-i18n="svc5_title">Responsive Design</h3>
+        <p data-i18n="svc5_desc">Mobile-first interfaces that look great on every device — phone, tablet, and desktop.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <h3 data-i18n="svc6_title">SEO & Performance</h3>
+        <p data-i18n="svc6_desc">Semantic HTML, structured data, optimized loading, and clean code to help your site rank better.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title" data-i18n="skills_title">Technical Skills</h2>
+      <p class="section-sub" data-i18n="skills_sub">Technologies I work with</p>
+    </div>
 
     <div class="skills-grid">
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <h3 data-i18n="sk_lang">Programming Languages</h3>
         <div class="tags">
           <span>Python</span><span>JavaScript</span><span>C#</span><span>PHP</span>
         </div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <h3 data-i18n="sk_front">Frontend</h3>
         <div class="tags">
           <span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>JavaScript</span>
         </div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <h3 data-i18n="sk_back">Backend & Databases</h3>
         <div class="tags">
           <span>Flask</span><span>MySQL</span><span>SQLite</span>
         </div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <h3 data-i18n="sk_ai">AI & Computer Vision</h3>
         <div class="tags">
           <span>PyTorch</span><span>Keras</span><span>TensorFlow</span>
-          <span>OpenCV</span><span>Deep Learning</span><span>Image Processing</span>
+          <span>OpenCV</span><span>Deep Learning</span>
         </div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <h3 data-i18n="sk_tools">Tools</h3>
         <div class="tags">
           <span>Git</span><span>GitHub</span><span>Docker</span><span>Chart.js</span>
@@ -208,13 +348,20 @@
 </section>
 
 <!-- ================= PROJECTS ================= -->
-<section class="section" id="projects">
+<section class="section section-alt" id="projects">
   <div class="container">
-    <h2 class="section-title" data-i18n="proj_title">Featured Projects</h2>
+    <div class="section-head reveal">
+      <span class="section-num">04</span>
+      <h2 class="section-title" data-i18n="proj_title">Featured Projects</h2>
+      <p class="section-sub" data-i18n="proj_sub">Selected work in AI, web, and computer vision</p>
+    </div>
 
     <!-- PNEUMOVISION -->
-    <article class="project-card">
+    <article class="project-card reveal">
       <div class="project-head">
+        <div class="project-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
         <div>
           <span class="project-cat" data-i18n="p1_cat">AI · Medical Imaging · Web</span>
           <h3>PneumoVision</h3>
@@ -222,8 +369,8 @@
       </div>
       <p data-i18n="p1_desc">
         AI-based pneumonia detection and chest X-ray analysis platform.
-        Processes chest X-ray images and classifies them into NORMAL and PNEUMONIA
-        using deep learning models. Includes image preprocessing, model selection,
+        Classifies chest X-ray images into NORMAL and PNEUMONIA using deep learning
+        models (DenseNet121, MobileNetV3). Includes image preprocessing,
         prediction history, dashboard visualizations, and dataset analytics.
       </p>
       <div class="tags">
@@ -232,14 +379,17 @@
         <span>SQLite</span><span>Chart.js</span><span>Docker</span>
       </div>
       <p class="disclaimer" data-i18n="p1_disc">
-        ⚠️ Academic project — predictions are for educational and research purposes only
+        Academic project — predictions are for educational and research purposes only
         and do not replace professional medical evaluation.
       </p>
     </article>
 
     <!-- BU HAMAD STORE -->
-    <article class="project-card">
+    <article class="project-card reveal">
       <div class="project-head">
+        <div class="project-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        </div>
         <div>
           <span class="project-cat" data-i18n="p2_cat">E-commerce · Web</span>
           <h3>BU HAMAD STORE</h3>
@@ -247,19 +397,26 @@
       </div>
       <p data-i18n="p2_desc">
         Arabic-language online marketplace for displaying and managing products
-        and facilitating customer orders. Database-backed architecture with product pages,
-        categories, checkout-related pages, and administration functionality.
+        and facilitating customer orders. Database-backed architecture with
+        product pages, categories, checkout flow, and administration panel.
       </p>
       <div class="tags">
         <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
       </div>
-      <!-- ⚠️ ضع الرابط فقط إذا الموقع شغال -->
-      <!-- <a href="https://buhamad.store/" target="_blank" rel="noopener" class="btn btn-sm btn-outline">Live Demo</a> -->
+      <div class="project-links">
+        <a href="https://buhamad.store/" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+          <span data-i18n="live_demo">Live Demo</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
     </article>
 
     <!-- AI CV PROJECTS -->
-    <article class="project-card">
+    <article class="project-card reveal">
       <div class="project-head">
+        <div class="project-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/></svg>
+        </div>
         <div>
           <span class="project-cat" data-i18n="p3_cat">AI · Machine Learning</span>
           <h3 data-i18n="p3_title">AI & Computer Vision Projects</h3>
@@ -267,8 +424,8 @@
       </div>
       <p data-i18n="p3_desc">
         A collection of projects involving image classification, computer vision,
-        and machine learning, including a plant disease classification application
-        and AI-based image analysis.
+        and machine learning — including a plant disease classification application
+        and AI-based image analysis using MobileNetV2.
       </p>
       <div class="tags">
         <span>Python</span><span>Keras</span><span>TensorFlow</span>
@@ -279,19 +436,52 @@
 </section>
 
 <!-- ================= MUMACODES ================= -->
-<section class="section section-alt" id="mumacodes">
+<section class="section" id="mumacodes">
   <div class="container">
-    <div class="brand-card">
-      <div class="brand-mark">M</div>
-      <div>
-        <h2>MuMaCodes</h2>
+    <div class="section-head reveal">
+      <span class="section-num">05</span>
+      <h2 class="section-title" data-i18n="brand_title">MuMaCodes</h2>
+      <p class="section-sub" data-i18n="brand_sub">A programming community for students & developers</p>
+    </div>
+
+    <div class="brand-card reveal">
+      <div class="brand-logo">
+        <img src="assets/logo-mumacodes.svg" alt="MuMaCodes logo" />
+      </div>
+      <div class="brand-content">
+        <h3>MuMaCodes<span class="accent">.</span></h3>
         <p data-i18n="brand_desc">
-          A programming-focused initiative and community that supports learning,
-          programming projects, and technical collaboration.
+          MuMaCodes is a programming-focused initiative and community that supports
+          learning, programming projects, and technical collaboration. We help students
+          and developers grow through shared knowledge, real projects, and open discussions.
         </p>
+
+        <div class="brand-features">
+          <div class="brand-feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span data-i18n="brand_f1">Community for students & developers</span>
+          </div>
+          <div class="brand-feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span data-i18n="brand_f2">Real coding projects & collaboration</span>
+          </div>
+          <div class="brand-feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span data-i18n="brand_f3">Active WhatsApp group for discussions</span>
+          </div>
+        </div>
+
         <div class="brand-links">
-          <a href="https://mumacodes-group.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-i18n="brand_web">Website</a>
-          <a href="https://mumacodes.github.io/ar/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" data-i18n="brand_com">Community</a>
+          <a href="https://wa.me/905394465124?text=Hi%2C%20I%20want%20to%20join%20MuMaCodes%20community" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.6c1.7.9 3.6 1.4 5.7 1.4 6.6 0 12-5.4 12-12S18.6 0 12 0zm0 22c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.5 16 2 14 2 12 2 6.5 6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z"/></svg>
+            <span data-i18n="brand_join">Join on WhatsApp</span>
+          </a>
+          <a href="https://mumacodes-group.netlify.app" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+            <span data-i18n="brand_web">Website</span>
+          </a>
+          <a href="https://mumacodes.github.io/ar/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+            <span data-i18n="brand_com">Community</span>
+          </a>
         </div>
       </div>
     </div>
@@ -299,47 +489,62 @@
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section class="section" id="contact">
+<section class="section section-alt" id="contact">
   <div class="container contact-wrap">
-    <h2 class="section-title" data-i18n="contact_title">Let's Connect</h2>
-    <p class="section-sub" data-i18n="contact_sub">Open to jobs, freelance, and collaborations</p>
+    <div class="section-head reveal">
+      <span class="section-num">06</span>
+      <h2 class="section-title" data-i18n="contact_title">Let's Connect</h2>
+      <p class="section-sub" data-i18n="contact_sub">Open to jobs, freelance, and collaborations</p>
+    </div>
 
     <div class="contact-grid">
-      <a href="mailto:mustafaelhuseyyen@gmail.com" class="contact-item">
-        <span class="ci-icon">@</span>
+      <a href="mailto:mustafaelhuseyyen@gmail.com" class="contact-item reveal">
+        <span class="ci-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg>
+        </span>
         <span class="ci-label">Email</span>
         <span class="ci-value">mustafaelhuseyyen@gmail.com</span>
       </a>
-      <a href="https://wa.me/905394465124" target="_blank" rel="noopener" class="contact-item">
-        <span class="ci-icon">WA</span>
+      <a href="https://wa.me/905394465124" target="_blank" rel="noopener" class="contact-item reveal">
+        <span class="ci-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.6c1.7.9 3.6 1.4 5.7 1.4 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>
+        </span>
         <span class="ci-label">WhatsApp</span>
         <span class="ci-value">+90 539 446 51 24</span>
       </a>
-      <a href="https://www.linkedin.com/in/mustafa-el-huseyyen-8681922a2/" target="_blank" rel="noopener" class="contact-item">
-        <span class="ci-icon">in</span>
+      <a href="https://www.linkedin.com/in/mustafa-el-huseyyen-8681922a2/" target="_blank" rel="noopener" class="contact-item reveal">
+        <span class="ci-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.4H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+        </span>
         <span class="ci-label">LinkedIn</span>
         <span class="ci-value">Mustafa El Huseyyen</span>
       </a>
-      <a href="https://www.instagram.com/1mmh3/" target="_blank" rel="noopener" class="contact-item">
-        <span class="ci-icon">IG</span>
+      <a href="https://www.instagram.com/1mmh3/" target="_blank" rel="noopener" class="contact-item reveal">
+        <span class="ci-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </span>
         <span class="ci-label">Instagram</span>
         <span class="ci-value">@1mmh3</span>
       </a>
-      <a href="https://github.com/1mmh3p" target="_blank" rel="noopener" class="contact-item">
-        <span class="ci-icon">GH</span>
+      <a href="https://github.com/1mmh3p" target="_blank" rel="noopener" class="contact-item reveal">
+        <span class="ci-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        </span>
         <span class="ci-label">GitHub</span>
         <span class="ci-value">@1mmh3p</span>
       </a>
-      <a href="https://mustafaelhuseyyen.netlify.app" target="_blank" rel="noopener" class="contact-item">
-        <span class="ci-icon">P</span>
+      <a href="https://1mmh3p.github.io/Portfolio/" class="contact-item reveal">
+        <span class="ci-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>
+        </span>
         <span class="ci-label">Portfolio</span>
-        <span class="ci-value">mustafaelhuseyyen.netlify.app</span>
+        <span class="ci-value">1mmh3p.github.io/Portfolio</span>
       </a>
     </div>
 
-    <div class="share-wrap">
+    <div class="share-wrap reveal">
       <button id="shareBtn" class="btn btn-outline btn-sm" data-i18n="share_btn">Share this profile</button>
-      <button id="copyBtn"  class="btn btn-outline btn-sm" data-i18n="copy_btn">Copy link</button>
+      <button id="copyBtn" class="btn btn-outline btn-sm" data-i18n="copy_btn">Copy link</button>
     </div>
   </div>
 </section>
@@ -347,18 +552,27 @@
 <!-- ================= FOOTER ================= -->
 <footer class="site-footer">
   <div class="container footer-inner">
-    <div>
+    <div class="footer-brand">
       <strong>Mustafa El Huseyyen</strong>
-      <p data-i18n="footer_role">Software Programmer · Web Developer</p>
+      <p data-i18n="footer_role">Computer Programmer · Software Developer</p>
+      <p class="footer-syria">
+        <img src="assets/flag-syria.svg" alt="Syria" />
+        <span data-i18n="footer_syria">Proudly Syrian</span>
+      </p>
     </div>
     <div class="footer-social">
       <a href="https://github.com/1mmh3p" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/mustafa-el-huseyyen-8681922a2/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://www.instagram.com/1mmh3/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://mumacodes-group.netlify.app" target="_blank" rel="noopener">MuMaCodes</a>
     </div>
     <p class="copyright">© <span id="year"></span> Mustafa El Huseyyen — MuMaCodes. All rights reserved.</p>
   </div>
 </footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
 
 <script src="js/main.js"></script>
 </body>
