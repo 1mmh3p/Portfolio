@@ -302,7 +302,7 @@ ul{list-style:none}
 .brand-links{display:flex;gap:12px;flex-wrap:wrap}
 
 /* ============ CONTACT ============ */
-.contact-wrap{text-align:center}
+.contact-wrap{text-align:center }
 .contact-wrap .section-head{text-align:center}
 .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:40px 0 32px}
 .contact-item{
@@ -316,6 +316,7 @@ ul{list-style:none}
   width:44px;height:44px;border-radius:11px;background:var(--gold-soft);
   border:1px solid var(--gold-border);display:grid;place-items:center;
   color:var(--gold);
+  
 }
 .ci-label{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);font-weight:800}
 .ci-value{font-weight:700;font-size:14px;color:var(--text);word-break:break-word}
@@ -335,7 +336,7 @@ ul{list-style:none}
   grid-column:1/-1;padding-top:24px;border-top:1px solid var(--border);
   margin-top:8px;text-align:center;font-size:13px;color:var(--muted);
 }
-
+.asd{display:none}
 /* ============ BACK TO TOP ============ */
 .back-to-top{
   position:fixed;bottom:24px;right:24px;z-index:90;
@@ -374,7 +375,7 @@ ul{list-style:none}
   .brand-feature{justify-content:center;text-align:center}
   .brand-links{justify-content:center}
   .hero-card{display:none}
-  .flag-mini{display:none}
+  .flag-mini{display:none}.asd{display:none}
 }
 @media (max-width:768px){
   .section{padding:70px 0}
@@ -385,6 +386,7 @@ ul{list-style:none}
   }
     .hero-card{display:none}
   .flag-mini{display:none}
+  .asd{display:none}
 
   .nav.open{display:block}
   .nav-list{flex-direction:column;gap:0}
